@@ -1,109 +1,163 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Computer Tech - Soluciones Tecnológicas y Token KARMA</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; color: #333; line-height: 1.6; }
-        header { background: #0f172a; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; border-bottom: 3px solid #2563eb; }
-        .logo h1 { font-size: 22px; color: #fff; }
-        .logo p { font-size: 12px; color: #38bdf8; }
-        nav a { color: #cbd5e1; text-decoration: none; margin-left: 15px; font-size: 14px; font-weight: bold; }
-        nav a:hover { color: #38bdf8; }
-        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
-        .hero { background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center; margin-bottom: 30px; }
-        .hero h2 { font-size: 28px; color: #0f172a; margin-bottom: 15px; }
-        .hero p { color: #64748b; font-size: 16px; margin-bottom: 20px; }
-        .btn-whatsapp { background: #16a34a; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; }
-        .btn-whatsapp:hover { background: #15803d; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .card { background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-top: 4px solid #2563eb; }
-        .card h3 { color: #0f172a; margin-bottom: 10px; font-size: 18px; }
-        .card ul { list-style: none; padding: 0; }
-        .card ul li { font-size: 13px; color: #64748b; margin-bottom: 8px; }
-        .karma-box { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; border-left: 5px solid #f59e0b; }
-        .karma-box h3 { color: #f59e0b; font-size: 20px; margin-bottom: 10px; }
-        .karma-box p { color: #cbd5e1; font-size: 14px; margin-bottom: 15px; }
-        .badge { background: #f59e0b; color: #0f172a; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; }
-        footer { text-align: center; padding: 20px; color: #94a3b8; font-size: 12px; background: #0f172a; margin-top: 40px; }
-    </style>
+    <title>Alpha Computer Tech | Tecnología, Soporte & Token KARMA</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
-    <header>
-        <div class="logo">
-            <h1>Alpha Computer Tech</h1>
-            <p>Tecnología, Soporte & Token KARMA</p>
-        </div>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#karma">Token KARMA</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-
-    <div class="container" id="inicio">
-        
-        <div class="hero">
-            <h2>Asistencia especializada en mantenimiento y tecnología</h2>
-            <p>Venta de equipos informáticos, ensamblaje, desarrollo de software a medida y pagos integrados con nuestro token oficial KARMA.</p>
-            <a href="https://wa.me/507652697014" target="_blank" class="btn-whatsapp">📲 Escribir al WhatsApp: 652697014</a>
-        </div>
-
-        <!-- Sección del Token KARMA recuperada -->
-        <div class="karma-box" id="karma">
-            <h3>🪙 Ecosistema de Pago: Token KARMA <span class="badge">Fase 2 Activa</span></h3>
-            <p>En Alpha Computer Tech impulsamos la economía digital. Ya puedes utilizar el <strong>Token KARMA</strong> como método de pago principal para nuestros servicios de hardware, software y biblioteca digital.</p>
-            <ul style="list-style: none; padding: 0;">
-                <li style="color: #cbd5e1; font-size: 13px; margin-bottom: 5px;">• <strong>Estado actual:</strong> Fase 2 de Liquidez & Trading en marcha.</li>
-                <li style="color: #cbd5e1; font-size: 13px; margin-bottom: 5px;">• <strong>Liquidez:</strong> 10,000 tokens integrados en el pool de QuickSwap.</li>
-                <li style="color: #cbd5e1; font-size: 13px; margin-bottom: 5px;">• <strong>Ventajas:</strong> Transacciones rápidas, seguras y exclusivas para nuestra comunidad tecnológica.</li>
-            </ul>
-        </div>
-
-        <div class="grid" id="servicios">
-            <div class="card">
-                <h3>🖥️ Hardware & Equipos</h3>
-                <ul>
-                    <li>• Venta de equipos tecnológicos de alta calidad.</li>
-                    <li>• Componentes y repuestos especializados.</li>
-                    <li>• Ensamblaje y mantenimiento de ordenadores.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>💻 Desarrollo de Software</h3>
-                <ul>
-                    <li>• Diseño de software personalizado.</li>
-                    <li>• Soluciones informáticas a medida para pymes.</li>
-                    <li>• Asesoramiento tecnológico integral.</li>
-                </ul>
-            </div>
-
-            <div class="card" style="border-top-color: #8b5cf6;">
-                <h3>📚 Biblioteca Digital</h3>
-                <ul>
-                    <li>• Libros digitales (eBooks) especializados.</li>
-                    <li>• Cómics y novelas gráficas.</li>
-                    <li>• Audiolibros y material educativo.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="hero" id="contacto" style="background: #0f172a; color: white;">
-            <h2 style="color: white;">¿Listo para realizar tu pedido con KARMA o consultar un presupuesto?</h2>
-            <p style="color: #94a3b8;">Contáctanos directamente por WhatsApp y te atenderemos al instante.</p>
-            <a href="https://wa.me/507652697014" target="_blank" class="btn-whatsapp">📲 Contactar por WhatsApp</a>
-        </div>
-
+    <!-- Luces de fondo decorativas -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl"></div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Alpha Computer Tech. Todos los derechos reservados.</p>
-    </footer>
+    <div class="relative z-10 flex flex-col min-h-screen">
+        <!-- Navegación -->
+        <header class="border-b border-slate-800/80 backdrop-blur-md bg-slate-950/80 sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <!-- Logo personalizado de Alpha Computer Tech (ACT) -->
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-700 border border-purple-500/40 flex items-center justify-center text-white font-black text-base shadow-lg shadow-purple-600/20">
+                        AC
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-purple-400 bg-clip-text text-transparent block">
+                            Alpha Computer Tech
+                        </span>
+                        <span class="text-xs text-slate-400 block">Tecnología, Soporte & Token KARMA</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300 font-medium">
+                    <a href="index.html" class="hover:text-purple-400 transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-purple-400 transition-colors">Servicios</a>
+                    <a href="https://felixdark1521.github.io/karma-token/" target="_blank" class="hover:text-purple-400 transition-colors">Token KARMA</a>
+                    <a href="#contacto" class="hover:text-purple-400 transition-colors">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="max-w-5xl mx-auto px-6 py-12 flex-1 space-y-16">
+            
+            <!-- Hero / Asistencia especializada -->
+            <section class="bg-slate-900/60 border border-slate-800/80 rounded-3xl p-8 sm:p-12 text-center space-y-6 backdrop-blur-sm shadow-xl">
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-100">
+                    Asistencia especializada en mantenimiento y tecnología
+                </h1>
+                <p class="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed">
+                    Venta de equipos informáticos, ensamblaje, desarrollo de software a medida y pagos integrados con nuestro token oficial <strong class="text-purple-400">KARMA</strong>.
+                </p>
+                <div class="pt-2">
+                    <a href="https://wa.me/507652697014" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-600/20 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Escribir al WhatsApp: 652697014
+                    </a>
+                </div>
+            </section>
+
+            <!-- Bloque del Ecosistema KARMA -->
+            <section class="bg-gradient-to-br from-slate-900 via-slate-900 to-purple-950/40 border border-purple-500/30 rounded-3xl p-8 space-y-4 shadow-xl">
+                <div class="flex items-center gap-3">
+                    <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-bold uppercase tracking-wider border border-purple-500/30">
+                        Fase 2 Activa
+                    </span>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-100">Ecosistema de Pago: Token KARMA</h2>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    En Alpha Computer Tech impulsamos la economía digital. Ya puedes utilizar el <strong class="text-purple-400">Token KARMA</strong> como método de pago principal para nuestros servicios de hardware, software y biblioteca digital.
+                </p>
+                <ul class="text-xs sm:text-sm text-slate-400 space-y-1.5 pt-2">
+                    <li>• <strong class="text-slate-200">Estado actual:</strong> Fase 2 de Liquidez & Trading en marcha.</li>
+                    <li>• <strong class="text-slate-200">Liquidez:</strong> 10,000 tokens integrados en el pool de QuickSwap.</li>
+                    <li>• <strong class="text-slate-200">Ventajas:</strong> Transacciones rápidas, seguras y exclusivas para nuestra comunidad tecnológica.</li>
+                </ul>
+            </section>
+
+            <!-- Servicios Grid -->
+            <section id="servicios" class="space-y-6 pt-4">
+                <div class="text-center space-y-2">
+                    <h2 class="text-2xl font-bold text-slate-100">Nuestros Servicios Principales</h2>
+                    <p class="text-slate-400 text-sm">Soluciones profesionales adaptadas a tus necesidades</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Hardware -->
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-4 hover:border-purple-500/40 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Hardware & Equipos</h3>
+                        <ul class="text-xs sm:text-sm text-slate-400 space-y-2">
+                            <li>• Venta de equipos tecnológicos de alta calidad.</li>
+                            <li>• Componentes y repuestos especializados.</li>
+                            <li>• Ensamblaje y mantenimiento de ordenadores.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Software -->
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-4 hover:border-purple-500/40 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Desarrollo de Software</h3>
+                        <ul class="text-xs sm:text-sm text-slate-400 space-y-2">
+                            <li>• Diseño de software personalizado.</li>
+                            <li>• Soluciones informáticas a medida para pymes.</li>
+                            <li>• Asesoramiento tecnológico integral.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Biblioteca Digital -->
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-4 hover:border-purple-500/40 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xl">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Biblioteca Digital</h3>
+                        <ul class="text-xs sm:text-sm text-slate-400 space-y-2">
+                            <li>• Libros digitales (eBooks) especializados.</li>
+                            <li>• Cómics y novelas gráficas.</li>
+                            <li>• Audiolibros y material educativo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de página -->
+        <footer id="contacto" class="border-t border-slate-900 bg-slate-950 py-10 text-center text-sm text-slate-500 mt-16">
+            <div class="max-w-6xl mx-auto px-6 space-y-4">
+                <p class="text-slate-400">
+                    Alpha Computer Tech &bull; Conectado con el ecosistema <a href="https://felixdark1521.github.io/karma-token/" target="_blank" class="text-purple-400 hover:underline">KARMA Token</a>
+                </p>
+                <p>© 2026 Alpha Computer Tech. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
 
 </body>
 </html>
